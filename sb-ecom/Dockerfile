@@ -9,7 +9,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 # Copy the source code and build the application
-COPY sb-ecom/ /app
+COPY . /app
 RUN mvn clean package -DskipTests
 
 
